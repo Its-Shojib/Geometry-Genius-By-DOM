@@ -7,10 +7,17 @@ function getInput(idName) {
     return inputNumber;
 }
 
-function getTriangleAre() {
+function getTriangleArea() {
     let base = getInput("triangleBase");
     let height = getInput("triangleHeight");
     let area = (base * height) / 2;
+    console.log(area +" cm2");
+
+}
+function getTriangleArea() {
+    let width = getInput("rectangleWidth");
+    let lenth = getInput("rectangleLenth");
+    let area = (width * lenth) ;
     console.log(area +" cm2");
 
 }
