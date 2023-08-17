@@ -13,7 +13,106 @@
 
 <body>
     <header>
-        <section class="max-w-screen-xl"></section>
+        <section class="max-w-screen-xl mx-auto px-4 md:px-8 lg:px-16 py-5 my-10">
+            <div class="flex flex-col md:flex-row">
+                <!-- Calculation -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <!-- card-1 -->
+                    <div class="card bg-gray-100 ">
+                        <figure class="px-10 pt-10">
+                            <img src="./images/triangle.png" alt="Triangle"
+                                class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Triangle</h2>
+                            <p>Area (A) = 0.5 * b * h</p>
+                            <div class="card-actions">
+                                <button class="bg-[#1090D8] rounded-lg px-16 py-2 text-white text-lg">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-2 -->
+                    <div class="card  bg-gray-100 ">
+                        <figure class="px-10 pt-10">
+                            <img src="./images/rectangle.png" alt="Rectangle"
+                                class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Rectangle</h2>
+                            <p>Area (A) = w * l</p>
+                            <div class="card-actions">
+                                <button class="bg-[#1090D8] rounded-lg px-16 py-2 text-white text-lg">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-3 -->
+                    <div class="card  bg-gray-100 ">
+                        <figure class="px-10 pt-10">
+                            <img src="./images/parallelogram.png" alt="Parallelogram"
+                                class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Parallelogram</h2>
+                            <p>Area (A) = b * h</p>
+                            <div class="card-actions">
+                                <button class="bg-[#1090D8] rounded-lg px-16 py-2 text-white text-lg">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-4 -->
+                    <div class="card  bg-gray-100 ">
+                        <figure class="px-10 pt-10">
+                            <img src="./images/rhombus.png" alt="Rhombus"
+                                class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Rhombus</h2>
+                            <p>Area (A) = 0.5 * d<sub>1</sub> * d<sub>2</sub></p>
+                            <div class="card-actions">
+                                <button class="bg-[#1090D8] rounded-lg px-16 py-2 text-white text-lg">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-5 -->
+                    <div class="card  bg-gray-100 ">
+                        <figure class="px-10 pt-10">
+                            <img src="./images/pentagon.png" alt="Pentagon"
+                                class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Pentagon</h2>
+                            <p>Area (A) = 0.5 * p * b</p>
+                            <div class="card-actions">
+                                <button class="bg-[#1090D8] rounded-lg px-16 py-2 text-white text-lg">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-6 -->
+                    <div class="card  bg-gray-100 ">
+                        <figure class="px-10 pt-10">
+                            <img src="./images/ellipse.png" alt="Ellipse"
+                                class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Ellipse</h2>
+                            <p>Area (A) =<svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+                                <path d="M15.1102 1.73103C15.6006 1.73197 15.999 1.3488 16 0.875317C16.0007 0.401836 15.6041 0.0172503 15.1136 0.0163071L6.23256 0.000272915C4.39578 -0.00302828 2.31254 -0.00680105 0.272293 1.95527C-0.0811408 2.28373 -0.091888 2.8263 0.248112 3.1675C0.588357 3.5087 1.15038 3.51931 1.50382 3.19085C1.51139 3.18401 1.51872 3.17717 1.5258 3.16986C2.48376 2.22172 3.80639 1.70014 5.17812 1.72961L3.55896 11.0002C3.47714 11.4664 3.80224 11.9083 4.28488 11.9873C4.28562 11.9873 4.28635 11.9875 4.28733 11.9875C4.33593 11.996 4.38527 12 4.43486 12C4.86841 11.9998 5.23845 11.6975 5.31026 11.2848L6.98144 1.71641L10.6697 1.72301L10.6545 9.43924C10.6027 10.6015 11.3961 11.6418 12.5612 11.9394C12.7189 11.9726 12.8802 11.9894 13.0416 11.9889C13.7631 11.9901 14.9783 11.6741 15.8957 9.81722C16.1089 9.39114 15.9238 8.87875 15.4824 8.6729C15.0411 8.46705 14.5105 8.64578 14.2973 9.07187C14.2963 9.07376 14.2954 9.07564 14.2944 9.07753C13.8069 10.0625 13.2651 10.3331 12.9549 10.2674C12.6085 10.1365 12.3946 9.79954 12.4307 9.44254L12.4459 1.72631L15.1102 1.73103Z" fill="#414141"/>
+                                </svg>* a * b</p>
+                            <div class="card-actions">
+                                <button class="bg-[#1090D8] rounded-lg px-16 py-2 text-white text-lg">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Output -->
+                <div class="w-[400px]">
+                    <h1 class="text-center text-xl underline">Area Calculation</h1>
+
+                </div>
+            </div>
+        </section>
 
     </header>
     <main>
