@@ -45,13 +45,13 @@
                             <h2 class="card-title">Rectangle</h2>
                             <p>Area (A) = w * l</p>
                             <p>
-                                <input type="text" class="w-16 border px-2 text-sm bg-cyan-50" name="" id="rectangleWidth" placeholder="w">
+                                <input type="text" class="w-16 border px-2 text-sm bg-cyan-50" name="" id="rectangleWidth" placeholder="width">
                                 <span class="ml-2">cm</span>
-                                <input type="text" class="w-16 border px-2 text-sm bg-cyan-50" name="" id="rectangleLenth" placeholder="l">
+                                <input type="text" class="w-16 border px-2 text-sm bg-cyan-50" name="" id="rectangleLenth" placeholder="length">
                                 <span class="ml-2">cm</span>
                             </p>
                             <div class="card-actions">
-                                <button onclick="getTriangleArea()" class="bg-[#1090D8] rounded-lg px-16 py-2 text-white text-lg mt-5">Calculate</button>
+                                <button onclick="getRectangleArea()" class="bg-[#1090D8] rounded-lg px-16 py-2 text-white text-lg mt-5">Calculate</button>
                             </div>
                         </div>
                     </div>
@@ -63,8 +63,14 @@
                         <div class="card-body items-center text-center">
                             <h2 class="card-title">Parallelogram</h2>
                             <p>Area (A) = b * h</p>
+                            <p>
+                                <input type="text" class="w-16 border px-2 text-sm bg-cyan-50" name="" id="parallelogramBase" placeholder="base">
+                                <span class="ml-2">cm</span>
+                                <input type="text" class="w-16 border px-2 text-sm bg-cyan-50" name="" id="parallelogramHeight" placeholder="height">
+                                <span class="ml-2">cm</span>
+                            </p>
                             <div class="card-actions">
-                                <button class="bg-[#1090D8] rounded-lg px-16 py-2 text-white text-lg mt-5">Calculate</button>
+                                <button onclick="getParallelogramArea()" class="bg-[#1090D8] rounded-lg px-16 py-2 text-white text-lg mt-5">Calculate</button>
                             </div>
                         </div>
                     </div>

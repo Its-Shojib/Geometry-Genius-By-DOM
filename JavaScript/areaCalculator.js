@@ -12,12 +12,16 @@ function getTriangleArea() {
     let height = getInput("triangleHeight");
     let area = (base * height) / 2;
     console.log(area +" cm2");
-
 }
-function getTriangleArea() {
+function getRectangleArea() {
     let width = getInput("rectangleWidth");
     let lenth = getInput("rectangleLenth");
     let area = (width * lenth) ;
     console.log(area +" cm2");
-
+}
+function getParallelogramArea() {
+    let base = getInput("parallelogramBase");
+    let height = getInput("parallelogramHeight");
+    let area = (base * height);
+    console.log(area +" cm2");
 }
