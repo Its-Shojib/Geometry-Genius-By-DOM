@@ -5,6 +5,7 @@ function getInput(idName) {
     inputField.value = "";
     if(isNaN(inputNumber)){
         alert("Please Enter valid Number");
+        return 0;
     }
     else{
         return inputNumber;
