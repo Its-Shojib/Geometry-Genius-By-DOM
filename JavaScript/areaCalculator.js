@@ -11,6 +11,14 @@ function validateAndPrint(input1, input2) {
         return false;
 }
 
+function addToCalculationArea(areaType,area){
+    let calculationEntry = document.getElementById("calculation");
+    let count = calculationEntry.childElementCount;
+    let p = document.createElement("p");
+    p.innerHTML =`${count + 1}.&nbsp;&nbsp;&nbsp;${areaType}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${area} cm<sup>2</sup>&nbsp;&nbsp;&nbsp;&nbsp; <button class="btn btn-success btn-sm">Convert to Meter</button>`
+    calculationEntry.appendChild(p);
+}
+
 function getTriangleArea() {
     let base = getInput("triangleBase");
     let height = getInput("triangleHeight");
@@ -19,7 +27,8 @@ function getTriangleArea() {
     }
     else {
         let area = (base * height) / 2;
-        console.log(area + " cm2");
+        // console.log(area + " cm2");
+        addToCalculationArea("Tryangle",area);
     }
 }
 function getRectangleArea() {
@@ -30,7 +39,8 @@ function getRectangleArea() {
     }
     else {
         let area = (width * lenth);
-        console.log(area + " cm2");
+        // console.log(area + " cm2");
+        addToCalculationArea("Rectangle",area);
     }
 }
 function getParallelogramArea() {
@@ -41,7 +51,8 @@ function getParallelogramArea() {
     }
     else {
         let area = (base * height);
-        console.log(area + " cm2");
+        // console.log(area + " cm2");
+        addToCalculationArea("Parallelogram",area);
     }
 }
 function getRhombusArea() {
@@ -52,7 +63,8 @@ function getRhombusArea() {
     }
     else {
         let area = (D1 * D2) / 2;
-        console.log(area + " cm2");
+        // console.log(area + " cm2");
+        addToCalculationArea("Rhombus",area);
     }
 }
 function getPentagonArea() {
@@ -63,7 +75,8 @@ function getPentagonArea() {
     }
     else {
         let area = (p * b) / 2;
-        console.log(area + " cm2");
+        // console.log(area + " cm2");
+        addToCalculationArea("Pentagon",area);
     }
 }
 function getEllipseArea() {
@@ -75,6 +88,7 @@ function getEllipseArea() {
     }
     else {
         let area = (PI * a * b);
-        console.log(area + " cm2");
+        // console.log(area + " cm2");
+        addToCalculationArea("Ellipse",area);
     }
 }
